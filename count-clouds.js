@@ -43,11 +43,51 @@ function countClouds(arr) {
 }
 
 // Following test should return 3.
-console.log(
+console.log('Test 1: '+
   countClouds([
     [0, 1, 1, 0],
     [1, 1, 0, 1],
     [0, 0, 1, 0],
     [1, 1, 1, 0],
+  ])
+);
+
+// Edge Case 1: Following test should return 0.
+console.log('Test 2: '+
+  countClouds([
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+  ])
+);
+
+// Edge Case 2: Following test should return 1.
+console.log('Test 3: '+
+  countClouds([
+    [1, 1, 1, 1],
+    [1, 1, 1, 1],
+    [1, 1, 1, 1],
+    [1, 1, 1, 1],
+  ])
+);
+
+// Edge Case 3: Following test should return 2.
+console.log('Test 4: '+
+  countClouds([
+    [1, 1, 0, 1],
+    [1, 0, 1, 1]
+  ])
+);
+
+// Edge Case 3: Following test should return 5.
+console.log('Test 5: '+
+  countClouds([
+    [1, 1, 0, 1],
+    [1, 0, 1, 1],
+    [0, 0, 0, 0],
+    [1, 0, 1, 0],
+    [1, 0, 0, 1],
+    [1, 0, 1, 1],
   ])
 );
